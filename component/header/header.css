@@ -1,0 +1,172 @@
+/* header.css */
+.head {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.head img {
+  width: 313px;
+  height: 313px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+
+   box-shadow: 0 20px 40px rgba(78, 77, 77, 0.167)
+}
+
+.head h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  background: linear-gradient(45deg, #9333ea, #ec4899, #f59e0b);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+.head p {
+  font-size: 1.2rem;
+  color: #fcfcfc;
+  max-width: 600px;
+  margin: 0 0 3rem 0;
+  line-height: 1.6;
+}
+
+/* Buttons container */
+.buttons-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.connect-button2 {
+  background: linear-gradient(45deg, #9333ea, #ec4899);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
+}
+
+.connect-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.6);
+}
+
+.resume-button {
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border: 2px solid #6b7280;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  border-color: #9333ea;
+  color: #9333ea;
+  transform: translateY(-2px);
+}
+
+/* Gradient animation */
+/* @keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .head {
+    padding: 1rem;
+  }
+  
+  .head img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .head h1 {
+    font-size: 2.5rem;
+  }
+  
+  .head p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .connect-button,
+  .resume-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head h1 {
+    font-size: 2rem;
+  }
+  
+  .head img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Optional: Add some subtle animations */
+.head img {
+  animation: fadeInUp 1s ease-out;
+}
+
+.head h1 {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.head p {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.buttons-container {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

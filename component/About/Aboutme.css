@@ -1,4 +1,5 @@
 /* About Section Styles */
+
 .about-header {
   text-align: center;
   margin-bottom: 64px;
@@ -43,13 +44,12 @@
   }
 }
 
-.about {
+ .about {
   background: linear-gradient(135deg, #000000 0%, #000000 100%);
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  margin-top: -30px;
   font-family: 'Arial', sans-serif;
   color: white;
-}
+} 
 
 .about-header {
   text-align: center;
@@ -206,6 +206,11 @@
 }
 
 @media (max-width: 480px) {
+
+  .about{
+    margin-top: -80px;
+  }
+
   .about-header h1 {
     font-size: 2rem;
   }

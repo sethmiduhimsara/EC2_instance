@@ -44,7 +44,7 @@ const Aboutme = () => {
 
             <p>
               My passion for software development is reflected in my continuous
-              learning, project work, and commitment to delivering high-quality,
+              learning,project work,and commitment to delivering high-quality,
               scalable, and user-focused applications.
             </p>
           </div>

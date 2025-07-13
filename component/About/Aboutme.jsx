@@ -50,7 +50,7 @@ const Aboutme = () => {
           </div>
 
           <div className="skills-section">
-            <h3>My Skills</h3>
+            {/* <h3>My Skills</h3> */}
             <div className="skills-grid">
               {skills.map((skill, index) => (
                 <div key={index} className="skill-card">
